@@ -1,0 +1,19 @@
+{
+    "name": "Warren Hastings",
+    "title": "Computer Support Specialist",
+    "contact": [
+        "+123 4567 8653",
+        "yourmail@domain.com",
+        "Washington DC - 4458 | USA",
+        "www.example.com"
+    ],
+    "education": [
+        {"year": "2008", "degree": "Your Degree Name", "institution": "University / College / Institute"},
+        {"year": "2010", "degree": "Your Degree Name Here", "institution": "University / College / Institute"}
+    ],
+    "experience": [
+        {"year": "2008 - 2010", "title": "Job Position / Title Here", "company": "Company Name", "description": "Lorem ipsum..."},
+        {"year": "2010 - 2014", "title": "Job Position / Title Here", "company": "Company Name", "description": "Lorem ipsum..."}
+    ],
+    "skills": ["Photoshop", "Illustrator", "InDesign", "Office", "Dreamweaver", "Keynote"]
+}
