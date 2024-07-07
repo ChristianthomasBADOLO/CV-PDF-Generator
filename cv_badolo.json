@@ -1,0 +1,42 @@
+[
+    {
+      "section": "En-t�te",
+      "content": "Christian Thomas BADOLO\n�l�ve INGENIEUR"
+    },
+    {
+      "section": "PROFIL",
+      "content": "Je suis �l�ve-ing�nieur g�n�raliste (BAC+4) de la prestigieuse Ecole Centrale Casablanca. Je suis int�ress� par les solutions IT ax�es sur le d�veloppement durable et la RSE, avec un int�r�t particulier pour l'analyse et le traitement des donn�es. Spontan�, rigoureux et curieux, je recherche activement un stage d'assistant ing�nieur de 12 semaines minimun dans ce sens."
+    },
+    {
+      "section": "EXPERIENCES",
+      "content": "- Responsable �v�nementiel - ENACTUS Ecole Centrale Casablanca (ECC), avril 2023 � maintenant\n-Organisation d'ateliers\n\n- Stage en Data Analystics - CodSoft, janvier 2024 � f�vrier 2024\n-Nettoyage de donn�es\n-Calcul des statistiques sommaires\n-Visualisation avec des histogrammes\n-Cr�ation de tableaux crois�s dynamiques\n-D�veloppement de tableaux de bord avec PowerBI\n\n- Projet �GreenVoice� - ECC, septembre 2023 � janvier 2024\n-Cr�ation d'une solution ax�e sur la RSE et le d�veloppement durable pour les grandes distributions (Marjane)\n-Utilisation des LLM pour d�veloppement de voicebot\n\n- Article scientifique �Predictive maintenance with optimal transport� - ECC, janvier 2024\n-Conception d'un mod�le de pr�vision de s�ries temporelles avec TensorFlow\n-Utilisation de la m�thode du transport optimal pour la d�tection d'anomalies.\n\n- Stage op�rateur - Smartprof, juillet � ao�t 2023\n-Web scraping\n-Conception et mise au point d'un moteur de recherche\n-SEO\n\n- Projet �SmartRamp� - ECC, semptembre 2022 � juin 2023\n-Falicitateur de l'�quipe\n-Responsable technique : conception de site web dynamique"
+    },
+    {
+      "section": "EDUCATION",
+      "content": "- Actuellement - Ecole Centrale Casablanca (ECC)\n2�me ann�e cycle ing�nieur : Industrie 4.0\n-Communication et r�seaux industriels, internet des Objets (IoT)\n-Transformation digitale : d�marches et mise en �uvre\n-New Business Models in Digital Economy\n-IA et applications en industrie 4.0\n\n2�me ann�e cycle ing�nieur : Mod�lisation et Aide � la D�cision\n-D�veloppement durable - RSE\n-Recherche op�rationnelle / Optimisation / Simulation\n-Contr�le qualit�"
+    },
+    {
+      "section": "LANGUES",
+      "content": "Fran�ais Niveau : C1, DALPH\nAnglais Niveau : B2+, TOEIC"
+    },
+    {
+      "section": "HUMAN SKILLS",
+      "content": "Empathique\nR�ceptif\nRigoureux"
+    },
+    {
+      "section": "HARD SKILLS",
+      "content": "- Machine learning\n-Python(pandas, tensorflow, scikit-learn)\n-Automatisation et int�gration continues(Docker, FastApi, Grafana& Prometheus)\n\n- Developpement web\n-Python(Django), Javascript(React), HTML, php, SQL\n\n- Suite Office\n-Microsoft Word, Excel (VBA), Powerpoint, PowerBI\n\n- Gestion de projets et collaboration\n-Github, Trello"
+    },
+    {
+      "section": "PORTFOLIO",
+      "content": "https://christianthomasbadolo.me/"
+    },
+    {
+      "section": "CONTACTS",
+      "content": "+212 700-127382\nchristian.badolo@centrale-casablanca.ma\nwww.linkedin.com/in/christianthomasbadolo\nBouskoura, Maroc"
+    },
+    {
+      "section": "CENTRES D'INT�R�TS",
+      "content": "Basketball\nMusique\nG�opolitique\nCulture japonaise"
+    }
+  ]
