@@ -1,35 +1,46 @@
 import json
 from services.google.generative_ai import GoogleGenerativeModelInit
 
-# Lire le fichier LaTeX
-with open('templates/cv1.tex', 'r') as latex_file:
+# Read the LaTeX file
+with open('templates/cv3.tex', 'r') as latex_file:
     latex_template = latex_file.read()
 
-# Charger le fichier JSON
-with open('cv.json', 'r') as json_file:
+# Load the JSON file
+with open('cv_badolo.json', 'r') as json_file:
     cv_data = json.load(json_file)
 
-# Construire le prompt pour Gemini
 prompt = f"""
-Vous trouverez ci-dessous une template LaTeX d'un CV ainsi que les données JSON d'un CV. Votre tâche consiste à structurer correctement chaque section du CV selon la template LaTeX fournie et à insérer toutes les informations présentes dans les données JSON. Assurez-vous que chaque section du JSON soit correctement représentée dans le document LaTeX final. Ajoutez des sections supplémentaires si nécessaire pour couvrir toutes les informations du JSON. Supprimez les sections dans la template qui ne correspondent pas aux données du JSON.
+Below you will find a LaTeX template of a CV and the JSON data of a CV. Your task is to properly structure each section of the CV according to the LaTeX template and insert all the information from the JSON data. 
 
-Template LaTeX:
+Mandatory instructions:
+1. Ensure that each section of the JSON is represented in the final LaTeX document.
+2. Add additional sections if necessary to include all the information from the JSON.
+3. Remove sections from the template that do not correspond to the JSON data.
+4. Format the content so that everything fits on a single A4 page. This is essential and crucial.
+5. Split the page into two columns after the "profile" section to use space optimally.
+6. Use a smaller font size (e.g., \\small or \\footnotesize) if necessary to make the content fit on a single page.
+7. Reduce vertical spacing (\\vspace) between sections to save space.
+8. Use appropriate LaTeX commands to manage columns (e.g., the multicols package).
+
+Here is the LaTeX template:
 {latex_template}
 
-Données JSON:
+Here is the JSON data:
 {json.dumps(cv_data, indent=4)}
 
-Veuillez fournir le contenu LaTeX complet avec toutes les données du CV insérées aux endroits appropriés et correctement structurées, en respectant la structure et le style de la template LaTeX. Supprimez les sections de la template qui ne correspondent pas aux données JSON.
+Please provide the complete LaTeX document with all CV data correctly inserted and structured. Ensure that the final document is optimized to fit on a single A4 page.
+
+Note: You are an expert in design and highly proficient in LaTeX. Apply your expertise to ensure the final output is professional, visually appealing, and perfectly formatted.
 """
 
-# Initialiser le modèle Gemini
-model = GoogleGenerativeModelInit("gemini-1.5-flash")
+# Initialize the Gemini model
+model = GoogleGenerativeModelInit("gemini-pro")
 
-# Générer le contenu LaTeX complet
+# Generate the complete LaTeX content
 response_latex = model.generate_content([prompt])
 
-# Sauvegarder le LaTeX final dans un fichier
-with open('cv_final.tex', 'w') as output_file:
+# Save the final LaTeX to a file
+with open('cv3_final.tex', 'w') as output_file:
     output_file.write(response_latex)
 
-print("Le CV a été généré avec succès et sauvegardé dans 'cv_final.tex'.")
+print("The CV has been successfully generated and saved in 'cv_final.tex'.")
