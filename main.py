@@ -11,7 +11,7 @@ with open('cv.json', 'r') as json_file:
 
 # Construire le prompt pour Gemini
 prompt = f"""
-Le contenu ci-dessous est une template LaTeX d'un CV, suivie des données JSON d'un CV. Veuillez structurer correctement les sections du CV selon la template LaTeX et ajouter toutes les informations existantes dans le CV JSON.
+Vous trouverez ci-dessous une template LaTeX d'un CV ainsi que les données JSON d'un CV. Votre tâche consiste à structurer correctement chaque section du CV selon la template LaTeX fournie et à insérer toutes les informations présentes dans les données JSON. Assurez-vous que chaque section du JSON soit correctement représentée dans le document LaTeX final. Ajoutez des sections supplémentaires si nécessaire pour couvrir toutes les informations du JSON. Supprimez les sections dans la template qui ne correspondent pas aux données du JSON.
 
 Template LaTeX:
 {latex_template}
@@ -19,7 +19,7 @@ Template LaTeX:
 Données JSON:
 {json.dumps(cv_data, indent=4)}
 
-Veuillez renvoyer le contenu LaTeX complet avec les données du CV insérées aux endroits appropriés.
+Veuillez fournir le contenu LaTeX complet avec toutes les données du CV insérées aux endroits appropriés et correctement structurées, en respectant la structure et le style de la template LaTeX. Supprimez les sections de la template qui ne correspondent pas aux données JSON.
 """
 
 # Initialiser le modèle Gemini
