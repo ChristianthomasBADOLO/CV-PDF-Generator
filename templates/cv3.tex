@@ -1,95 +1,140 @@
-\documentclass[a4paper,10pt]{article}
-\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{hyperref}
 \usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{parskip}
+\usepackage{multicol}
 \usepackage{xcolor}
-\usepackage{fontawesome5}
-\usepackage[hidelinks]{hyperref}
 
-% Define el color verde olivo
-\definecolor{verdeolivo}{RGB}{85,107,47} % Puedes ajustar estos valores según tus preferencias
-
-\titleformat{\section}{\large\bfseries\color{verdeolivo}}{}{0em}{}[\titlerule]
-\titleformat{\subsection}[runin]{\bfseries\color{verdeolivo}}{}{0em}{}[:]
+\newcommand{\sectiontitle}[1]{\noindent\textbf{\large #1}}
+\newcommand{\subsectiontitle}[1]{\noindent\textbf{#1}}
+\newcommand{\name}[1]{\textcolor{blue!80!black}{\textbf{\large #1}}}
+\newcommand{\email}[1]{\href{mailto:{#1}}{#1}}
+\newcommand{\website}[1]{\href{#1}{#1}}
 
 \begin{document}
 
-\pagestyle{empty}
-
-%\section*{\faIcon{address-card} Contact Information}
 \begin{center}
-    \textbf{\Huge John Doe} \\
-    \vspace{2mm}
-    \faIcon{briefcase} Quality Engineer
+    \name{John Doe}
+    \hrulefill
 \end{center}
 
-\vspace{4mm}
 \begin{center}
-    \faIcon{phone} \href{https://wa.me/1234567890}{(123) 456-7890} \hspace{2cm}
-    \faIcon{envelope} \href{mailto:john.doe@example.com}{john.doe@example.com} \hspace{2cm}
-    \faIcon{linkedin} \href{https://www.linkedin.com/in/johndoe/}{johndoe}
+    City, Country \textbullet \ +123 456-7890 \textbullet \ \email{john.doe@example.com} \textbullet \ \website{www.linkedin.com/in/johndoe}
 \end{center}
 
+\vspace{0.5pt}
 
-\space
-\section*{\faIcon{user} Professional Profile}
-I am a Chemical Engineer with a passion for problem solving and quality. With my experience with leading medical device manufacturing companies, I have developed skills and knowledge about the regulations of this highly regulated industry with high quality standards. 
+\sectiontitle{Profile}
 
-\section*{\faIcon{building} Work Experience}
+\lipsum[1]
 
-\subsection*{ABCD Medical \hfill Apr 2022 - Actual}
-\textit{ Quality Engineer} \\
-Implementing regulations, GMP, Lean methodologies, and 6S.
-Conducting risk management and analysis through FMEAs.
-Developing and executing protocols, procedures, and validation reports (TMVs).
-Actively contributing to the creation of a Validation Master Plan for various new production lines.
-Defining Critical to Quality (CTQs), establishing quality controls, and developing validation strategies for IQs, OQs, PQs, PPQs as required.
-Drafting Component Specifications (CSs) and overseeing raw material inspection processes (FAIs).
-Collaborating closely with customers and working alongside operators, technicians, buyers, and sterilization teams to ensure quality and timely deliveries.
+\begin{multicols}{2}
 
-\subsection*{Agroindustrial RIMAC \hfill Jan 2022 - Apr 2022}
-\textit{ Regulatory Assistant} \\
-To provide regulatory documentation support for various Active Ingredients
+\subsectiontitle{Experience}
 
-\section*{\faIcon{graduation-cap} Education}
-
-\subsection*{Universidad de Costa Rica \hfill In progress}
-\textit{Lic. Chemical Engineer}\\
-Thesis topic "Implementation of the Failure Modes and Effects Analysis (FMEA) methodology for risk detection in the electro-surgical pencil device with smoke evacuation to enhance product quality."
-
-\section*{\faIcon{cogs} Technical Skills}
-\begin{center}
-    \begin{itemize}[label=\faIcon{check}, itemsep=-3pt]
-        \item Process Validation
-        \item Quality Regulations and Standards
-        \item Risk Analysis
-        \item Problem Solving
-    \end{itemize}
-\end{center}
-
-\section*{\faIcon{certificate} Certifications}
-\begin{itemize}[label=\faIcon{certificate}]
-    \item Prints Reading
-    \item Applied Statistics in Medical Devices Manufacturing
-    \item Design of Experiments (DOE)
-    \item Root Cause Anlysis
+- Event Manager - Example Organization, April 2023 - Present
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item \lipsum[2]
 \end{itemize}
 
-%\section*{\faIcon{code} Notable Projects}
-%\subsection*{Project 1 \hfill Start Date - End Date}
-%Description of the project and your contributions.
-
-%\subsection*{Project 2 \hfill Start Date - End Date}
-%Description of the project and your contributions.
-
-\section*{\faIcon{language} Languages}
-\begin{itemize}[label=\faIcon{globe}]
-    \item Spanish - Native
-    \item English - Business Competence
+- Data Analytics Intern - Example Company, January 2024 - February 2024
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item \lipsum[3]
+    \item \lipsum[4]
+    \item \lipsum[5]
+    \item \lipsum[6]
+    \item \lipsum[7]
 \end{itemize}
 
-\section*{\faIcon{thumbs-up} References}
-For reference contact Jane Smith\\ \textbf{\faIcon{linkedin} LinkedIn:} \href{https://www.linkedin.com/in/jane-smith/}{jane-smith}
+- Project “Example Project” - Example School, September 2023 - January 2024
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item \lipsum[8]
+    \item \lipsum[9]
+\end{itemize}
+
+- Scientific Article “Example Article” - Example School, January 2024
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item \lipsum[10]
+    \item \lipsum[11]
+\end{itemize}
+
+- Operator Intern - Example Company, July - August 2023
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item \lipsum[12]
+    \item \lipsum[13]
+    \item \lipsum[14]
+\end{itemize}
+
+- Project “Another Example Project” - Example School, September 2022 - June 2023
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item \lipsum[15]
+    \item \lipsum[16]
+\end{itemize}
+
+\subsectiontitle{Education}
+
+- Currently - Example School
+\begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt, leftmargin=1.2cm]
+    \item 2nd Year Engineering Cycle: Industry 4.0
+        \begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt]
+            \item \lipsum[17]
+            \item \lipsum[18]
+            \item \lipsum[19]
+            \item \lipsum[20]
+        \end{itemize}
+
+    \item 2nd Year Engineering Cycle: Modeling and Decision Making
+        \begin{itemize}[topsep=0pt, partopsep=0pt, parsep=0pt]
+            \item \lipsum[21]
+            \item \lipsum[22]
+            \item \lipsum[23]
+        \end{itemize}
+\end{itemize}
+
+\subsectiontitle{Languages}
+
+- French: C1, DALF
+- English: B2+, TOEIC
+
+\subsectiontitle{Human Skills}
+
+- Empathetic
+- Receptive
+- Rigorous
+
+\subsectiontitle{Hard Skills}
+
+\textbf{Machine Learning}
+- Python (pandas, tensorflow, scikit-learn)
+
+\textbf{Automation and Continuous Integration}
+- Docker, FastApi, Grafana & Prometheus
+
+\textbf{Web Development}
+- Python (Django), Javascript (React), HTML, PHP, SQL
+
+\textbf{Office Suite}
+- Microsoft Word, Excel (VBA), Powerpoint, PowerBI
+
+\textbf{Project Management and Collaboration}
+- Github, Trello
+
+\subsectiontitle{Portfolio}
+
+\website{https://example.com/}
+
+\subsectiontitle{Interests}
+
+- Basketball
+- Music
+- Geopolitics
+- Japanese Culture
+
+\end{multicols}
 
 \end{document}

@@ -1,136 +1,142 @@
-\documentclass[a4paper,10pt]{article}
-\usepackage[left=1in, right=1in, top=1in, bottom=1in]{geometry}
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=true,citecolor=blue,urlcolor=magenta,linkcolor=blue]{hyperref}
 \usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{parskip}
-\usepackage{xcolor}
-\usepackage{fontawesome5}
-\usepackage[hidelinks]{hyperref}
 \usepackage{multicol}
+\usepackage{xcolor}
+\usepackage[hang, small]{footmisc}
+\renewcommand{\footnotemargin}{0.7cm}
 
-% Define el color verde olivo
-\definecolor{verdeolivo}{RGB}{85,107,47}
-
-\titleformat{\section}{\large\bfseries\color{verdeolivo}}{}{0em}{}[\titlerule]
-\titleformat{\subsection}[runin]{\bfseries\color{verdeolivo}}{}{0em}{}[:]
+\newcommand{\sectiontitle}[1]{\noindent\textbf{\large #1}}
+\newcommand{\subsectiontitle}[1]{\noindent\textbf{#1}}
+\newcommand{\name}[1]{\textcolor{blue!80!black}{\textbf{\large #1}}}
+\newcommand{\email}[1]{\href{mailto:{#1}}{#1}}
+\newcommand{\website}[1]{\href{#1}{#1}}
 
 \begin{document}
 
-\pagestyle{empty}
-
-%\section*{\faIcon{address-card} Contact Information}
 \begin{center}
-    \textbf{\Huge Christian Thomas BADOLO} \\
-    \vspace{2mm}
-    \faIcon{briefcase} \ufffdl\ufffdve-ing\ufffdnieur g\ufffdn\ufffdraliste
+    \name{\textbf{Christian Thomas BADOLO}}
+    \hrulefill
+    \textsf{\small Élève-ingénieur} \\
 \end{center}
 
-\vspace{4mm}
 \begin{center}
-    \faIcon{phone} +212 700-127382 \hspace{2cm}
-    \faIcon{envelope} christian.badolo@centrale-casablanca.ma \hspace{2cm}
-    \faIcon{linkedin} \href{https://www.linkedin.com/in/christianthomasbadolo/}{christianthomasbadolo}
+    Bouskoura, Maroc \textbullet \ +212 700-127382 \textbullet \ \email{christian.badolo@centrale-casablanca.ma} \textbullet \ \website{www.linkedin.com/in/christianthomasbadolo}
 \end{center}
 
-\pagebreak
+\vspace{0.5pt}
 
-\section*{\faIcon{user} Professional Profile}
-Je suis \ufffdl\ufffdve-ing\ufffdnieur g\ufffdn\ufffdraliste (BAC+4) de la prestigieuse Ecole Centrale Casablanca. Je suis int\ufffdress\ufffd par les solutions IT ax\ufffdes sur le d\ufffdveloppement durable et la RSE, avec un int\ufffdr\ufffdt particulier pour l'analyse et le traitement des donn\ufffdes. Spontan\ufffd, rigoureux et curieux, je recherche activement un stage d'assistant ing\ufffdnieur de 12 semaines minimun dans ce sens.
+\sectiontitle{Profil}
+
+Je suis élève-ingénieur généraliste (BAC+4) de la prestigieuse École Centrale Casablanca. Je suis intéressé par les solutions IT axées sur le développement durable et la RSE, avec un intérêt particulier pour l'analyse et le traitement des données. Spontané, rigoureux et curieux, je recherche activement un stage d'assistant ingénieur de 12 semaines minimum dans ce sens.
 
 \begin{multicols}{2}
-\section*{\faIcon{building} Work Experience}
 
-\subsection*{Responsable \ufffdv\ufffdnementiel \hfill avril 2023 - maintenant}
-\textit{ENACTUS Ecole Centrale Casablanca (ECC)}
-\begin{itemize}
-    \item Organisation d'ateliers
-\end{itemize}
+\subsectiontitle{Expériences}
 
-\subsection*{Stage en Data Analystics \hfill janvier 2024 - f\ufffdvrier 2024}
-\textit{CodSoft}
-\begin{itemize}
-    \item Nettoyage de donn\ufffdes
-    \item Calcul des statistiques sommaires
-    \item Visualisation avec des histogrammes
-    \item Cr\ufffdation de tableaux crois\ufffds dynamiques
-    \item D\ufffdveloppement de tableaux de bord avec PowerBI
-\end{itemize}
-
-\subsection*{Projet \ufffdGreenVoice\ufffd \hfill septembre 2023 - janvier 2024}
-\textit{ECC}
-\begin{itemize}
-    \item Cr\ufffdation d'une solution ax\ufffde sur la RSE et le d\ufffdveloppement durable pour les grandes distributions (Marjane)
-    \item Utilisation des LLM pour d\ufffdveloppement de voicebot
-\end{itemize}
-
-\subsection*{Article scientifique \ufffdPredictive maintenance with optimal transport\ufffd \hfill janvier 2024}
-\textit{ECC}
-\begin{itemize}
-    \item Conception d'un mod\ufffdle de pr\ufffdvision de s\ufffdries temporelles avec TensorFlow
-    \item Utilisation de la m\ufffdthode du transport optimal pour la d\ufffdtection d'anomalies.
-\end{itemize}
-
-\subsection*{Stage op\ufffdrateur \hfill juillet - ao\ufffdt 2023}
-\textit{Smartprof}
-\begin{itemize}
-    \item Web scraping
-    \item Conception et mise au point d'un moteur de recherche
-    \item SEO
-\end{itemize}
-
-\subsection*{Projet \ufffdSmartRamp\ufffd \hfill semptembre 2022 - juin 2023}
-\textit{ECC}
-\begin{itemize}
-    \item Falicitateur de l'\ufffdquipe
-    \item Responsable technique : conception de site web dynamique
-\end{itemize}
-
-\pagebreak
-
-\section*{\faIcon{graduation-cap} Education}
-
-\subsection*{Ecole Centrale Casablanca (ECC) \hfill actuellement}
-\textit{2\ufffdme ann\ufffde cycle ing\ufffdnieur : Industrie 4.0}
-\begin{itemize}
-    \item Communication et r\ufffdseaux industriels, internet des Objets (IoT)
-    \item Transformation digitale : d\ufffdmarches et mise en \ufffduvre
-    \item New Business Models in Digital Economy
-    \item IA et applications en industrie 4.0
-\end{itemize}
-
-\subsection*{2\ufffdme ann\ufffde cycle ing\ufffdnieur : Mod\ufffdlisation et Aide \ufffd la D\ufffdcision}
-\begin{itemize}
-    \item D\ufffdveloppement durable - RSE
-    \item Recherche op\ufffdrationnelle / Optimisation / Simulation
-    \item Contr\ufffdle qualit\ufffd
-\end{itemize}
-
-\section*{\faIcon{cogs} Technical Skills}
-\begin{center}
-    \begin{itemize}[label=\faIcon{check}, itemsep=-3pt]
-        \item Machine learning
-        \item Python(pandas, tensorflow, scikit-learn)
-        \item Automatisation et int\ufffdgration continues(Docker, FastApi, Grafana\& Prometheus)
-        
-        \item Développement web
-        \item Python(Django), Javascript(React), HTML, php, SQL
-        
-        \item Suite Office
-        \item Microsoft Word, Excel (VBA), Powerpoint, PowerBI
-        
-        \item Gestion de projets et collaboration
-        \item Github, Trello
+- Responsable événementiel - ENACTUS École Centrale Casablanca (ECC), avril 2023 - présent
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+        \item Organisation d'ateliers
     \end{itemize}
-\end{center}
-\end{multicols}
 
-\section*{\faIcon{language} Languages}
-\begin{itemize}[label=\faIcon{globe}]
-    \item Français - Niveau : C1, DALPH
-    \item Anglais - Niveau : B2+, TOEIC
+- Stage en Data Analytics - CodSoft, janvier 2024 - février 2024
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+        \item Nettoyage de données
+        \item Calcul des statistiques sommaires
+        \item Visualisation avec des histogrammes
+        \item Création de tableaux croisés dynamiques
+        \item Développement de tableaux de bord avec PowerBI
+    \end{itemize}
+
+- Projet “GreenVoice” - ECC, septembre 2023 - janvier 2024
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+        \item Création d'une solution axée sur la RSE et le développement durable pour les grandes distributions (Marjane)
+        \item Utilisation des LLM pour le développement de voicebot
+    \end{itemize}
+
+- Article scientifique “Predictive maintenance with optimal transport” - ECC, janvier 2024
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+        \item Conception d'un modèle de prévision de séries temporelles avec TensorFlow
+        \item Utilisation de la méthode du transport optimal pour la détection d'anomalies
+    \end{itemize}
+
+- Stage opérateur - Smartprof, juillet - août 2023
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+        \item Web scraping
+        \item Conception et mise au point d'un moteur de recherche
+        \item SEO
+    \end{itemize}
+
+- Projet “SmartRamp” - ECC, septembre 2022 - juin 2023
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+        \item Facilitateur de l'équipe
+        \item Responsable technique : conception de site web dynamique
+    \end{itemize}
+
+\subsectiontitle{Éducation}
+
+- Actuellement - École Centrale Casablanca (ECC)
+\begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+    \item \textbf{2ème année cycle ingénieur : Industrie 4.0}
+        \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+            \item Communication et réseaux industriels, Internet des objets (IoT)
+            \item Transformation digitale : démarches et mise en œuvre
+            \item New Business Models in Digital Economy
+            \item IA et applications en industrie 4.0
+        \end{itemize}
+
+    \item \textbf{2ème année cycle ingénieur : Modélisation et Aide à la Décision}
+        \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt]
+            \item Développement durable - RSE
+            \item Recherche opérationnelle / Optimisation / Simulation
+            \item Contrôle qualité
+        \end{itemize}
 \end{itemize}
 
-\section*{\faIcon{thumbs-up} References}
-Pour référence contact Jane Smith\\ \textbf{\faIcon{linkedin} LinkedIn:} \href{https://www.linkedin.com/in/jane-smith/}{jane-smith}
+\subsectiontitle{Langues}
+
+- Français : Niveau : C1, DALPH
+- Anglais : Niveau : B2+, TOEIC
+
+\subsectiontitle{Human Skills}
+
+- Empathique
+- Réceptif
+- Rigoureux
+
+\subsectiontitle{Hard Skills}
+
+\textbf{Machine Learning}
+- Python (pandas, tensorflow, scikit-learn)
+
+\textbf{Automatisation et Intégration Continues}
+- Docker, FastApi, Grafana \& Prometheus
+
+\textbf{Développement Web}
+- Python (Django), Javascript (React), HTML, PHP, SQL
+
+\textbf{Suite Office}
+- Microsoft Word, Excel (VBA), Powerpoint, PowerBI
+
+\textbf{Gestion de Projets et Collaboration}
+- Github, Trello
+
+\subsectiontitle{Centres d'Intérêts}
+
+- Basketball
+- Musique
+- Géopolitique
+- Culture japonaise
+
+\subsectiontitle{Portfolio}
+
+\website{https://christianthomasbadolo.me/}
+
+\end{multicols}
 
 \end{document}
