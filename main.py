@@ -48,4 +48,4 @@ with open('cv6_nabi_final.tex', 'w') as output_file:
     output_file.write(response_latex)
 
 print("The CV has been successfully generated and saved in 'cv_final.tex'.")
-# bbbbbbbbbbbbbbbbbbb
+# bbbbbbbbbbbbbbbb
