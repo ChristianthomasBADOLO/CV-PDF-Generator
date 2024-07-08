@@ -23,7 +23,6 @@ Mandatory instructions:
 8. Condense text where possible by shortening sentences and summarizing information.
 9. Prioritize key sections like "Profile", "Professional Experience", and "Education" over less critical sections.
 10. Use appropriate LaTeX commands to ensure a professional and visually appealing layout.
-11. Utilise un bon encodage pour le texte uft-8
 
 Here is the LaTeX template:
 {latex_template}
@@ -48,4 +47,3 @@ with open('cv6_nabi_final.tex', 'w') as output_file:
     output_file.write(response_latex)
 
 print("The CV has been successfully generated and saved in 'cv_final.tex'.")
-# bbbbbbbbbbbbbbbb
