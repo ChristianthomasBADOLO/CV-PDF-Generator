@@ -2,11 +2,11 @@ import json
 from services.google.generative_ai import GoogleGenerativeModelInit
 
 # Read the LaTeX file
-with open('templates/cv6.tex', 'r') as latex_file:
+with open('templates/cv8.tex', 'r') as latex_file:
     latex_template = latex_file.read()
 
 # Load the JSON file
-with open('cv_nabi.json', 'r') as json_file:
+with open('cv_nabi.json', 'r', encoding='utf-8') as json_file:
     cv_data = json.load(json_file)
 
 prompt = f"""
@@ -43,7 +43,7 @@ model = GoogleGenerativeModelInit("gemini-pro")
 response_latex = model.generate_content([prompt])
 
 # Save the final LaTeX to a file
-with open('cv6_nabi_final.tex', 'w') as output_file:
+with open('cv8_nabi_final.tex', 'w') as output_file:
     output_file.write(response_latex)
 
 print("The CV has been successfully generated and saved in 'cv_final.tex'.")
