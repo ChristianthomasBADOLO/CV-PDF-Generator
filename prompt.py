@@ -20,7 +20,7 @@ Le CV doit être structuré de manière compacte en utilisant les sections suiva
 7. CONTACTS
 8. CENTRES D'INTÉRÊTS
 
-Si tu trouves d'autres sections dans le JSON, ajoute-les également.
+Si tu trouves d'autres sections dans le JSON, ajoute-les également Souligne bien chaque section.
 
 Voici un exemple de mise en page en HTML :
 
