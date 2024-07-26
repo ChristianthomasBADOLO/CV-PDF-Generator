@@ -11,6 +11,7 @@ This tool generates professional CVs in PDF format from JSON data. It parses a J
 ## Metodology
 
 This image outlines the step-by-step process used to generate professional CVs from user-provided data, detailing each stage from data input to the final PDF output.
+![Flowcharts - Page 1](https://github.com/user-attachments/assets/9d006bda-8d92-45c4-8b08-407b681c878f)
 
 
 ## Usage Guidelines
@@ -75,7 +76,6 @@ Your JSON input can contain the following fields:
 3. **Convert HTML to PDF**
 
 This configuration is for Ubuntu and may vary for Windows. Please check and adapt the following code accordingly.
-
 
     ```python
     import os
