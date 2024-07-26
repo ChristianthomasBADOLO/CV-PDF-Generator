@@ -7,7 +7,7 @@ with open('cv_badolo.json', 'r', encoding='utf-8') as json_file:
 prompt = f"""
 Utilise les informations suivantes du CV en format JSON pour créer un CV en HTML qui tient sur une seule page. Organise les informations de manière compacte en utilisant une mise en page efficace. Voici les données JSON :
 
-{json.dumps(cv_data, indent=2)}
+{json.dumps(cv_data, indent=2)} #Should change given your json structure
 
 Le CV doit être structuré de manière compacte en utilisant les sections suivantes :
 
