@@ -77,6 +77,7 @@ Your JSON input can contain the following fields:
 
 This configuration is for Ubuntu and may vary for Windows. Please check and adapt the following code accordingly.
 
+
     ```python
     import os
     import time
@@ -115,7 +116,7 @@ This configuration is for Ubuntu and may vary for Windows. Please check and adap
         file.write(base64.b64decode(result['data']))
 
     driver.quit()
-    ```
+   ```
 
 ### Example JSON Input
 
